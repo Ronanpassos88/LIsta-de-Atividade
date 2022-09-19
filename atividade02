@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+
+int main(){
+	int A;
+	int B;
+	int C;
+	int respostaUser;
+	
+	do{
+	printf("Digite a variavel A:");
+	scanf("%d",&A);
+	printf("Digite a variavel B:");
+	scanf("%d",&B);
+	printf("Digite a variavel C:");
+	scanf("%d",&C);
+	
+	if((A+B)<=C){
+		printf("A soma de A+B e menor do que C\n");
+	}else{ 
+		printf("A soma de A+B nao e menor do que C");
+	}
+			printf("Deseja continuar? digite\n 1- continuar\n 2- terminar\n");
+			scanf("%d",&respostaUser);
+	}	while(respostaUser!=2);
+	
+	return 0;	
+}
