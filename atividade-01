@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+
+int main(){
+	
+	int saldo=10000.0;
+	int saque;
+	int respostaUser;
+	do{
+		printf("gostaria de sacar ?");
+		scanf("%d",&saque);
+	
+		if(saque<=saldo ){
+			printf("parabens voce tem din din\n");
+		}else{
+			printf("Deu nao irmao kkk\n");
+		}
+		printf("Deseja continuar? digite\n 1- continuar\n 2- terminar\n");
+		scanf("%d",&respostaUser);
+	}	while(respostaUser!=2);
+
+	return 0;	
+}
